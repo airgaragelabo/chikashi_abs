@@ -1,0 +1,12 @@
+#N canvas 662 206 342 202 10;
+#X obj 29 39 r a;
+#X floatatom 30 66 5 0 0 0 - - -;
+#X floatatom 31 124 5 0 0 0 - - -;
+#X obj 30 97 r b;
+#X msg 108 28 read sample_qlist.txt;
+#X msg 126 60 print;
+#X obj 112 90 qcontrol;
+#X connect 0 0 1 0;
+#X connect 3 0 2 0;
+#X connect 4 0 6 0;
+#X connect 5 0 6 0;
